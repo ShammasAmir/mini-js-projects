@@ -29,6 +29,11 @@ body {
   flex: 0.5;
   margin: 10px;
   position: relative;
+  transition: 2s;
+}
+
+.panel.active{
+  flex: 5;
 }
 
 .panel h3 {
@@ -37,4 +42,10 @@ body {
   bottom: 20px;
   left: 20px;
   margin: 0;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.panel.active h3{
+  opacity: 1;
 }
